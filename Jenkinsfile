@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
-                    sh 'docker tag calculator abhipsapanda/speminiproject:latest'
+                    sh 'docker tag ${DOCKER_IMAGE_NAME} abhipsapanda/speminiproject:latest'
                     sh 'docker push abhipsapanda/speminiproject'
                     }
                  }
