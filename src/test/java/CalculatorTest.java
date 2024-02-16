@@ -12,10 +12,10 @@ public class CalculatorTest {
         assertEquals(3, calculator.sqrt(9), DELTA);
         assertEquals(15,calculator.sqrt(225),DELTA);
         assertEquals(25,calculator.sqrt(625),DELTA);
-        assertEquals(0,calculator.sqrt(1),DELTA);
+        assertEquals(1,calculator.sqrt(1),DELTA);
         assertEquals(0,calculator.sqrt(0),DELTA);
         assertNotEquals(8,calculator.sqrt(9),DELTA);
-        assertNotEquals(10,calculator.sqrt(100),DELTA);
+        assertNotEquals(65,calculator.sqrt(100),DELTA);
         assertNotEquals(52,calculator.sqrt(99),DELTA);
         assertNotEquals(12,calculator.sqrt(1),DELTA);
 
