@@ -47,7 +47,7 @@ public class Calculator
                     num = scanner.nextDouble();
                     System.out.print("Enter power for Base:");
                     num1=scanner.nextDouble();
-                    System.out.println("Natural log of " + num + " is " + calculator.power_function(num,num1));
+                    System.out.println(num + " raised to the power "+ num1 + " is " + calculator.power_function(num,num1));
                     break;
                 case 5:
                     flag=false;
